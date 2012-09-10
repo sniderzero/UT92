@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlProgramsRow"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tvProgramName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="5sp"
+        android:text="@string/sHome"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvProgramName"
+        android:layout_below="@id/tvProgramName"
+        android:text="1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvOf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvComplete"
+        android:layout_marginLeft="5sp"
+        android:layout_toRightOf="@+id/tvComplete"
+        android:text="@string/sOf"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvOf"
+        android:layout_alignBottom="@+id/tvOf"
+        android:layout_marginLeft="5sp"
+        android:layout_toRightOf="@+id/tvOf"
+        android:text="1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvExercisesComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTotal"
+        android:layout_alignBottom="@+id/tvTotal"
+        android:layout_marginLeft="5sp"
+        android:layout_toRightOf="@+id/tvTotal"
+        android:text="@string/sDaysCompleted"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvTotalCompletesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvComplete"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:text="@string/sTotalCompletions" />
+
+    <TextView
+        android:id="@+id/tvTotalCompletions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTotalCompletesLabel"
+        android:layout_alignBottom="@+id/tvTotalCompletesLabel"
+        android:layout_toRightOf="@+id/tvTotalCompletesLabel"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/tvActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvExercisesComplete"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5sp"
+        android:text="@string/sActive"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

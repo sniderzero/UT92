@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRepDetail"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/llhRep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5sp" >
+
+        <Button
+            android:id="@+id/bDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_Date"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvRep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bMinusRep"
+            android:layout_toLeftOf="@+id/etRep"
+            android:text="@string/sReps"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/etRep"
+            android:layout_width="48dp"
+            android:layout_height="48sp"
+            android:layout_alignTop="@+id/bMinusRep"
+            android:layout_toLeftOf="@+id/bMinusRep"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="0" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/bMinusRep"
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:layout_toLeftOf="@+id/bPlusRep"
+            android:background="@drawable/metalbutton"
+            android:text="@string/sMinusSign"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bPlusRep"
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bluecirclebutton"
+            android:text="@string/sPlusSign"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llhWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llhRep" >
+
+        <TextView
+            android:id="@+id/tvWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sWeight"
+            android:layout_toLeftOf="@+id/etWeight"
+            android:layout_alignBaseline="@+id/bMinusWeight"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="48dp"
+            android:layout_height="48sp"
+            android:layout_alignBaseline="@+id/bMinusWeight"
+            android:layout_toLeftOf="@+id/bMinusWeight"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/bMinusWeight"
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:layout_marginTop="5sp"
+            android:layout_toLeftOf="@+id/bPlusWeight"
+            android:text="@string/sMinusSign"
+            android:textSize="20sp" 
+            android:background="@drawable/whitebutton"
+            android:scaleType="fitXY"/>
+
+        <Button
+            android:id="@+id/bPlusWeight"
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5sp"
+            android:text="@string/sPlusSign"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spBand"
+            android:layout_width="wrap_content"
+            android:layout_height="48sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/etWeight"
+            android:layout_marginTop="5sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llhHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llhWeight"
+        android:layout_marginTop="5sp" >
+
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="0dip"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/sNotesHint"
+            android:inputType="textMultiLine"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>
